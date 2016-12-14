@@ -100,7 +100,11 @@ Run sandbox.py to create virtual environment and build the app
 ```
 mkvirtualenv pydioenv
 source pydioenv/bin/activate
+git clone repo.url
+cd pydio-sync
 pip install -r requirements.txt
+cd src/pydio
+git submodule update --init
 # do some changes
 python main.py
 ```
